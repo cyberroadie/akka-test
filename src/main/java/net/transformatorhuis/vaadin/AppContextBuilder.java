@@ -2,6 +2,8 @@ package net.transformatorhuis.vaadin;
 
 import org.mortbay.jetty.webapp.WebAppContext;
 
+import java.net.URL;
+
 /**
  * User: cyberroadie
  * Date: 18/02/11
@@ -11,10 +13,11 @@ public class AppContextBuilder {
     private WebAppContext webAppContext;
 
 	public WebAppContext buildWebAppContext(){
+        URL warUrl  = this.getClass().getResource("/");
+
 		webAppContext = new WebAppContext();
-		webAppContext.setDescriptor(webAppContext + "/WEB-INF/web.xml");
-		webAppContext.setResourceBase(".");
-		webAppContext.setContextPath("/runJetty");
+		webAppContext.setWar(warUrl.toExternalForm());
+		webAppContext.setContextPath("/");
 		return webAppContext;
 	}
 }
