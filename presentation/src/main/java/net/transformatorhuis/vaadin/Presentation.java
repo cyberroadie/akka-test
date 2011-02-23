@@ -16,7 +16,7 @@ public class Presentation {
         Context context = new Context(server, "/", Context.SESSIONS);
 
         ServletHolder servletHolder = new ServletHolder(new ICEPushServlet());
-        servletHolder.setInitParameter("application", "HelloWorld");
+        servletHolder.setInitParameter("application", "net.transformatorhuis.vaadin.HelloWorld");
         servletHolder.setInitParameter("widgetset", "net.transformatorhuis.vaadin.MyAppWidgetSet");
         servletHolder.setInitOrder(1);
 
