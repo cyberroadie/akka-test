@@ -16,6 +16,10 @@
             <groupId>se.scalablesolutions.akka</groupId>
             <artifactId>akka-actor</artifactId>
         </dependency>
+        <dependency>
+            <groupId>se.scalablesolutions.akka</groupId>
+            <artifactId>akka-remote</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

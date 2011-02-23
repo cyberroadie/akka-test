@@ -52,6 +52,11 @@
                 <version>1.0-RC5</version>
             </dependency>
             <dependency>
+                <groupId>se.scalablesolutions.akka</groupId>
+                <artifactId>akka-remote</artifactId>
+                <version>1.0-RC5</version>
+            </dependency>
+            <dependency>
                 <groupId>com.vaadin</groupId>
                 <artifactId>vaadin</artifactId>
                 <version>6.5.0</version>
